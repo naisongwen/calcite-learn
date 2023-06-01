@@ -1,0 +1,28 @@
+{
+  "defaultSchema": "db2",
+  "schemas": [
+    {
+      "factory": "org.apache.calcite.adapter.jdbc.JdbcSchema$Factory",
+      "name": "db1",
+      "operand": {
+        "jdbcDriver": "org.postgresql.Driver",
+        "jdbcPassword": "postgres",
+        "jdbcUrl": "jdbc:postgresql://localhost:5432/postgres",
+        "jdbcUser": "postgres"
+      },
+      "type": "custom"
+    },
+    {
+      "factory": "org.apache.calcite.adapter.jdbc.JdbcSchema$Factory",
+      "name": "db2",
+      "operand": {
+        "jdbcDriver": "com.mysql.cj.jdbc.Driver",
+        "jdbcPassword": "123456",
+        "jdbcUrl": "jdbc:mysql://10.201.0.205:3306/hivemetastore_db_dev_212",
+        "jdbcUser": "root"
+      },
+      "type": "custom"
+    }
+  ],
+  "version": "1.0"
+}

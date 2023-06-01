@@ -1,0 +1,17 @@
+{
+  "defaultSchema": "db1",
+  "schemas": [
+    {
+      "factory": "org.apache.calcite.adapter.jdbc.JdbcSchema$Factory",
+      "name": "db1",
+      "operand": {
+        "jdbcDriver": "com.mysql.cj.jdbc.Driver",
+        "jdbcPassword": "123456",
+        "jdbcUrl": "jdbc:mysql://10.201.0.205:3306/hivemetastore_db_dev_212",
+        "jdbcUser": "root"
+      },
+      "type": "custom"
+    }
+  ],
+  "version": "1.0"
+}
